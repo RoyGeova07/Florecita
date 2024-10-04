@@ -5,7 +5,7 @@ speed(0)
 bgcolor("black")
 goto(0, -40)
 
-# Aquí se dibuja la flor
+# Aqui se dibuja la flor
 for i in range(16):
     for j in range(16):
         color('#FFA216')
@@ -62,11 +62,10 @@ def Dibujar_Y(x,y):
         circulo(*pos)
     
 
-# Llamadas a las funciones para dibujar letras centradas
-# Ajuste de las posiciones para centrar el nombre dentro de la flor
-Dibujar_R(-60, 30)  # Ajuste la posición de la "R"
-Dibujar_O(-10, 30)  # Ajuste la posición de la "O"
-Dibujar_Y(40, 30)   # Ajuste la posición de la "Y"
+
+Dibujar_R(-60, 30)  #
+Dibujar_O(-10, 30)  
+Dibujar_Y(40, 30)   
 
 hideturtle()
 done()
