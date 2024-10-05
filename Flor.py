@@ -5,7 +5,11 @@ speed(0)
 bgcolor("black")
 goto(0,-40)
 
+<<<<<<< HEAD
 # Draw leaves
+=======
+# Aqui se dibuja la flor
+>>>>>>> f77ee4403f53e908fa73d3eb942de17cf35a4ed1
 for i in range(16):
     for j in range(18):
         color('#FFA216'), rt(90)
@@ -63,10 +67,17 @@ def draw_Y(x, y):
     for pos in Posicion_Y:
         point(*pos, radius=5)
 
+<<<<<<< HEAD
 # Draw 'ROY' and position them appropriately, larger and centered
 draw_R(-50, -20)  # Adjust the position of 'R'
 draw_O(-10, -20)  # Adjust the position of 'O'
 draw_Y(20, -20)   # Adjust the position of 'Y'
+=======
+
+Dibujar_R(-60, 30)  #
+Dibujar_O(-10, 30)  
+Dibujar_Y(40, 30)   
+>>>>>>> f77ee4403f53e908fa73d3eb942de17cf35a4ed1
 
 hideturtle()
 done()
