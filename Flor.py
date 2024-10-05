@@ -5,11 +5,7 @@ speed(0)
 bgcolor("black")
 goto(0,-40)
 
-<<<<<<< HEAD
 # Draw leaves
-=======
-# Aqui se dibuja la flor
->>>>>>> f77ee4403f53e908fa73d3eb942de17cf35a4ed1
 for i in range(16):
     for j in range(18):
         color('#FFA216'), rt(90)
@@ -41,7 +37,7 @@ def point(x, y, radius=6):
     begin_fill(), circle(radius), end_fill()
 
 # Funcion para R
-def draw_R(x, y):
+def Dibujar_R(x, y):
     Posicion_R = [(x, y), (x, y+9), (x, y+18), (x, y+27), (x, y+36),
                    (x+9, y+36), (x+18, y+36), (x+18, y+27), (x+18, y+18),
                    (x+9, y+18), (x, y+18), (x+18, y), (x+9, y+9)]
@@ -50,7 +46,7 @@ def draw_R(x, y):
         point(*pos, radius=5)
 
 # Funcion para O
-def draw_O(x, y):
+def Dibujar_O(x, y):
     Posicion_O = [(x, y+6), (x, y+12), (x, y+18), (x, y+24),
                    (x+6, y+30), (x+12, y+24), (x+12, y+18), (x+12, y+12), (x+12, y+6),
                    (x+6, y), (x, y+6)]
@@ -59,7 +55,7 @@ def draw_O(x, y):
         point(*pos, radius=5)
 
 # Funcion para Y
-def draw_Y(x, y):
+def Dibujar_Y(x, y):
     Posicion_Y = [(x, y+30), (x+6, y+24), (x+12, y+18), 
                    (x+12, y+12), (x+12, y+6), (x+12, y),
                    (x+18, y+18), (x+24, y+24), (x+30, y+30)]
@@ -67,17 +63,13 @@ def draw_Y(x, y):
     for pos in Posicion_Y:
         point(*pos, radius=5)
 
-<<<<<<< HEAD
-# Draw 'ROY' and position them appropriately, larger and centered
-draw_R(-50, -20)  # Adjust the position of 'R'
-draw_O(-10, -20)  # Adjust the position of 'O'
-draw_Y(20, -20)   # Adjust the position of 'Y'
-=======
+# aqui se centre las letrAs
+Dibujar_R(-50, -20)  
+Dibujar_O(-10, -20)  
+Dibujar_Y(20, -20)   
 
-Dibujar_R(-60, 30)  #
-Dibujar_O(-10, 30)  
-Dibujar_Y(40, 30)   
->>>>>>> f77ee4403f53e908fa73d3eb942de17cf35a4ed1
+hideturtle()
+done()
 
 hideturtle()
 done()
