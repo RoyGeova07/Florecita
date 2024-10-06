@@ -71,5 +71,3 @@ Dibujar_Y(20, -20)
 hideturtle()
 done()
 
-hideturtle()
-done()
